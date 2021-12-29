@@ -33,22 +33,22 @@ const TableStudent = (props) => {
       title: "Name",
       dataIndex: "name",
       render: (name) => <a>{name}</a>,
-      width: "20%",
+      width: "15%",
     },
     {
       title: "Age",
       dataIndex: "age",
-      width: "15%",
+      width: "10%",
     },
     {
       title: "Address",
       dataIndex: "address",
-      width: "15%",
+      width: "10%",
     },
     {
       title: "",
       dataIndex: "function",
-      width: "15%",
+      width: "10%",
       render: (value, studentInfo) => (
         <div>
           <Button
@@ -103,7 +103,18 @@ const TableStudent = (props) => {
     ...student,
   }));
 
-  return <Table columns={columns} dataSource={data} />;
+  return (
+    <Table
+      columns={columns}
+      dataSource={data}
+      style={{
+        overflow: "hidden",
+        marginTop: "4rem",
+        position: "absolute",
+        maxWidth: "80%",
+      }}
+    />
+  );
 };
 
 export default connect(

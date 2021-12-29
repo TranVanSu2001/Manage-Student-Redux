@@ -8,6 +8,9 @@ import {
 } from "src/redux/action/student";
 import { ManageStudentPageWrapper } from "./style";
 import TableStudent from "./TableStudent";
+import { Layout } from "antd";
+
+const { Header, Content, Footer, Sider } = Layout;
 
 const ManageCv = (props) => {
   useEffect(() => {
@@ -22,13 +25,15 @@ const ManageCv = (props) => {
 
   return (
     <LayoutManage>
-      <ManageStudentPageWrapper>
-        <div className="heading">
-          <div className="title">Quản lý công việc</div>
-        </div>
+      <Content style={{ minHeight: "600px" }}>
+        <ManageStudentPageWrapper>
+          <div className="heading" style={{ marginTop: "1rem" }}>
+            <div className="title">Quản lý công việc</div>
+          </div>
 
-        <TableStudent />
-      </ManageStudentPageWrapper>
+          <TableStudent />
+        </ManageStudentPageWrapper>
+      </Content>
     </LayoutManage>
   );
 };

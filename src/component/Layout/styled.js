@@ -3,7 +3,7 @@ import { IoLogoOctocat } from "react-icons/io";
 
 const LayoutWrapper = styled.div`
   display: flex;
-  min-height: 80vh;
+  max-height: 80vh;
 `;
 
 const TopbarWrapper = styled.div`
@@ -21,7 +21,7 @@ const ContentWrapper = styled.div`
 
 const MainContentWrapper = styled.div`
   padding: 1rem 1rem;
-  justify-content: center;
+  /* justify-content: center; */
   /* align-items: stretch; */
   display: flex;
   /* height: 100%; */
