@@ -7,13 +7,13 @@ import {
   LiFooterSocial,
   LinkSocial,
 } from "./FooterStyled";
-import { Icon, IconPage, IconText } from "./styled";
+import { Icon, IconPage, IconText } from "../styled";
 
 const FooterHomePage = () => {
   return (
     <FooterWrapper>
       <FooterCopyright>
-        © 2021 The President and Fellows of FPT University
+        © 2021 The President and Fellows of University
       </FooterCopyright>
       <FooterIcon>
         <Icon>

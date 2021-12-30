@@ -7,7 +7,6 @@ import {
   TableElement,
   TableElementDescription,
   TabelElementView,
-  ButtonTableElement,
   ReadButtonTableElement,
   ButtonElementDes,
   DetailsInfo,
@@ -22,15 +21,26 @@ import {
   BtnYtbPlay,
   BtnYtbText,
 } from "./DetailStyle";
-import "./style.css";
-import { notification } from "antd";
-import { SmileOutlined } from "@ant-design/icons";
+import "../style.css";
+import { notification, BackTop } from "antd";
+import { SmileOutlined, ArrowUpOutlined } from "@ant-design/icons";
 const openNotification = () => {
   notification.open({
     message: "Chưa có gì để học, thông cảm!",
 
     icon: <SmileOutlined style={{ color: "#108ee9" }} />,
   });
+};
+
+const style = {
+  height: 40,
+  width: 40,
+  lineHeight: "40px",
+  borderRadius: 4,
+  backgroundColor: "#1088e9",
+  color: "#fff",
+  textAlign: "center",
+  fontSize: 14,
 };
 
 const Details = () => {
@@ -163,7 +173,7 @@ const Details = () => {
         <HeadingDetail>
           <H1Detail>The world in 2021</H1Detail>
           <H2Description>
-            These were some of the big moments from 2021 at FPT.
+            These were some of the big moments from 2021.
           </H2Description>
         </HeadingDetail>
         <DetailInfoWrapper>
@@ -214,6 +224,11 @@ const Details = () => {
           </PlayBnYtb>
         </div>
       </YtbPlayVid>
+      <BackTop>
+        <div style={style}>
+          <ArrowUpOutlined />
+        </div>
+      </BackTop>
     </ContentDetails>
   );
 };

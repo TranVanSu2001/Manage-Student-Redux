@@ -4,7 +4,7 @@ import { AiOutlinePlayCircle } from "react-icons/ai";
 
 export const ContentDetails = styled.div`
   min-width: 100vw;
-  margin-top: 1.2rem;
+  padding-top: 1.2rem;
   background-color: #f3f4f4;
 `;
 
@@ -15,6 +15,7 @@ export const HeadingDetail = styled.h1`
   align-items: center;
   position: relative;
   background-color: #f3f4f4;
+  justify-content: space-between;
 `;
 
 export const H1Detail = styled.h1`
@@ -25,6 +26,7 @@ export const H1Detail = styled.h1`
   margin-right: auto;
   flex-basis: 50%;
   background-color: #f3f4f4;
+  border-right: 1px solid #656f77;
 `;
 
 export const H2Description = styled.div`
