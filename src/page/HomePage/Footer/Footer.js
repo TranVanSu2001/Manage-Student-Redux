@@ -7,7 +7,7 @@ import {
   LiFooterSocial,
   LinkSocial,
 } from "./FooterStyled";
-import { Icon, IconPage, IconText } from "../styled";
+import { Icon, IconPage, IconText } from "../Header/HeaderStyed";
 
 const FooterHomePage = () => {
   return (

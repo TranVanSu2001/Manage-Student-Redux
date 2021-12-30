@@ -224,6 +224,7 @@ const Details = () => {
           </PlayBnYtb>
         </div>
       </YtbPlayVid>
+
       <BackTop>
         <div style={style}>
           <ArrowUpOutlined />

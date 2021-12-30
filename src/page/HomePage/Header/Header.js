@@ -13,7 +13,7 @@ import {
   ContentButton,
   ButtonManage,
   ButtonView,
-} from "../styled";
+} from "./HeaderStyed";
 import "antd/dist/antd.css";
 
 import { Link } from "react-router-dom";
