@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ManageStudent from "../src/page/ManageStudentRedux/index";
-import ManageCv from "../src/page/ManageCv/index";
-import HomePage from "./page/HomePage/index";
+import ManageStudent from "src/page/ManageStudentRedux";
+import ManageCv from "src/page/ManageCv";
+import HomePage from "src/page/HomePage";
+import ListPost from "src/page/ListPost";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/managestu" component={ManageStudent} />
         <Route exact path="/cv" component={ManageCv} />
+        <Route exact path="/post" component={ListPost} />
       </Switch>
     </Router>
   );

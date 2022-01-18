@@ -1,7 +1,6 @@
 import { useEffect } from "react";
-
 import { connect } from "react-redux";
-import { LayoutManage } from "src/component/";
+import { LayoutManage } from "src/component";
 import {
   actSaveSetListStudent,
   actSetModalStudentVisible,
@@ -10,7 +9,7 @@ import { ManageStudentPageWrapper } from "./style";
 import TableStudent from "./TableStudent";
 import { Layout } from "antd";
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Content} = Layout;
 
 const ManageCv = (props) => {
   useEffect(() => {

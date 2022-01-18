@@ -10,3 +10,5 @@ export const SAVE_ADD_CV = "SAVE_ADD_CV";
 export const ACT_SELECTED_ADD = "ACT_SELECTED_ADD";
 export const CHOOSE_DATE_CV = "CHOOSE_DATE_CV";
 export const DATE_CREATE_CV = "DATE_CREATE_CV";
+
+export const SAVE_LIST_POST = "SAVE_LIST_POST";

@@ -46,14 +46,21 @@ const LayoutManage = (props) => {
               <Icon />
             </Link>
           </Logo>
+          
           <Menu.Item key="1" icon={<HomeOutlined />}>
             <Link to="/">Home Page</Link>
           </Menu.Item>
+
           <Menu.Item key="1" icon={<PieChartOutlined />}>
             <Link to="/managestu">Manage Student</Link>
           </Menu.Item>
+
           <Menu.Item key="1" icon={<UnorderedListOutlined />}>
             <Link to="/cv">View CV</Link>
+          </Menu.Item>
+
+          <Menu.Item key="1" icon={<UnorderedListOutlined />}>
+            <Link to="/post">Post</Link>
           </Menu.Item>
         </Menu>
       </Sider>
